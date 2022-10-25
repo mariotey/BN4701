@@ -15,9 +15,9 @@ def start_page():
 def instruction_page():
    return render_template("instruct.html")
 
-@app.route("/Edit")
-def edit_page():
-   return render_template("edit.html")
+# @app.route("/Edit")
+# def edit_page():
+#    return render_template("edit.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

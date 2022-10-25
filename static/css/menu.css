@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    /* border: 3px solid green;  */
+}
+
+.background {
+    height: 800px;
+    top: 50%;
+    text-align: center;
+   
+    background-image: url(/static/img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #cccccc; /* Used if the image is unavailable */    
+}
+
+.title {
+    position: relative;
+    top: 30%;
+}
+
+.button {
+    position: relative;
+    top: 55%;
+}
+
+h1 {
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    font-size: 40px;
+    color: white;
+    padding: 10px 10px;
+}
+
+button {
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    font-size: 30px;
+    color: black;
+    padding: 10px 10px;
+}
+
