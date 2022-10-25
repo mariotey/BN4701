@@ -1,16 +1,19 @@
 .container {
-    position: relative;
     display: flex;
-    align-items: center;
+    position: relative;
+    
     top: 100px;
+
+    align-items: center;
     justify-content: center;
 }
 
 .background {
-    height: 800px;
-    top: 50%;
     display: flex;
     text-align: center;
+    
+    top: 50%;
+    height: 800px;
     width: 1400px;
     height: 805px;
    
@@ -21,22 +24,24 @@
 }
 
 .map_space {
-    position: relative;
     display: inline-block;
-    /* border: 5px solid black; */
-
+    position: relative;
+    
     width: 1000px;
     height: 794px;
+
+    /* border: 5px solid black; */
 }
 
 .map {
-    position: relative;
     display: inline-block;
-    border: 5px solid black;
+    position: relative;
 
     width: 360px;
     height: 326px;
     margin: 30px 60px;
+
+    border: 5px solid black;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -44,25 +49,29 @@
 }
 
 .menu_space {
-    position: relative;
-    /* border: 5px solid black; */
     display: inline-block;
+    position: relative;
 
     width: 400px;
     height: 794px;   
+
+    /* border: 5px solid black; */
 }
 
 .profile_space {
-    position: relative;
     display: flex;
-    border: 5px solid black;
+    position: relative;
+    
     width: 395px;
     height: 392px;
+
+    border: 5px solid black;
 }
 
 .profile {
-    position: relative;
     display: inline-block;
+    position: relative;
+    
     width: 200px;
 
     background-position: center;
@@ -71,11 +80,13 @@
 }
 
 .attr_space {
-    position: relative;
     display: inline-block;
-    /* border: 5px solid black; */
+    position: relative;
+    
     width: 190px;
     height: 184px;
+
+    /* border: 5px solid black; */
 }
 
 .medal {
@@ -93,17 +104,18 @@
 }
 
 .location {
-    position: relative;
     display: inline-block;
-    /* border: 5px solid black; */
+    position: relative;
 
     align-items: center;
     justify-content: center;
+
+    /* border: 5px solid black; */
 }
 
 .location_image {
-    margin: 26px 42px;
     height: 180px;
+    margin: 26px 42px;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -112,15 +124,17 @@
 }
 
 h1 {
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    color: red;
     margin: 40px 10px -20px 10px;
+    
+    color: red;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;    
 }
 
 button {
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    font-size: 30px;
-    color: black;
     padding: 10px 10px;
+    color: black;
+
+    font-size: 30px;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
 }
 
