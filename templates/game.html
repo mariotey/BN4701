@@ -10,10 +10,10 @@
         <div class = "container">
             <div class = "background">
                 <div class = "map_space">
-                    <div class = "map" style = "background-image: url(/static/img/voiddeck.jpg);"></div>
-                    <div class = "map" style = "background-image: url(/static/img/wetmarket.jpeg);"></div>
-                    <div class = "map" style = "background-image: url(/static/img/park.jpg);"></div>
-                    <div class = "map" style = "background-image: url(/static/img/hawker.png);"></div>
+                    <div class = "map" onclick = "get_location('voiddeck')" style = "background-image: url(/static/img/voiddeck.png);"></div>
+                    <div class = "map" onclick = "get_location('wetmarket')" style = "background-image: url(/static/img/wetmarket.png);"></div>
+                    <div class = "map" onclick = "get_location('park')" style = "background-image: url(/static/img/park.png);"></div>
+                    <div class = "map" onclick = "get_location('hawker')" style = "background-image: url(/static/img/hawker.png);"></div>
                 </div>
                 <div class = "menu_space">
                     <div class = "profile_space">
@@ -24,14 +24,44 @@
                         </div>
                     </div>
                     <div class = "profile_space location">
-                        <h1> Location </h1>>
-                        <div class="location_image" style = "background-image: url(/static/img/hawker.png);"> Image </div>
-                        <button> Let's go! </button>
+                        <h1 id="location_name"> Select a Location </h1>
+                        <div id = "location_image" class="location_image"></div>
+                        <a id = "location_link"><button id = "location_button" disabled> Let's go! </button></a>
                     </div>
                 </div>   
             </div>      
         </div>
     </body>
     <script>
+        function get_location(attr) {
+            document.getElementById("location_button").disabled = false;
+            
+            if (attr == "voiddeck") {
+                document.getElementById("location_name").innerHTML = "Void Deck";
+                document.getElementById("location_image").style.backgroundImage = "url('static/img/voiddeck.png')";
+                document.getElementById("location_link").href = "VoidDeck";
+            }
+            else if (attr == "wetmarket") {
+                document.getElementById("location_name").innerHTML = "Wet Market";
+                document.getElementById("location_image").style.backgroundImage = "url('static/img/wetmarket.png')";
+                document.getElementById("location_link").href = "WetMarket";
+            }
+            else if (attr == "park") {
+                document.getElementById("location_name").innerHTML = "Park";
+                document.getElementById("location_image").style.backgroundImage = "url('static/img/park.png')";
+                document.getElementById("location_link").href = "Park";
+            }
+            else if (attr == "hawker") {
+                document.getElementById("location_name").innerHTML = "Hawker Centre";
+                document.getElementById("location_image").style.backgroundImage = "url('static/img/hawker.png')";
+                document.getElementById("location_link").href = "HawkerCentre";
+            }
+            else {
+                document.getElementById("location_name").innerHTML = "Select a Location";
+                document.getElementById("location_image").style.backgroundImage = "none";
+                document.getElementById("location_link").href = "none";
+            }
+        }
+
     </script>
 </html>

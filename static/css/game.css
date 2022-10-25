@@ -104,15 +104,17 @@
 .location_image {
     margin: 26px 5px;
     height: 180px;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: 310px 222px;
+    background-color: #cccccc; /* Used if the image is unavailable */    
 }
 
 h1 {
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     color: red;
-    margin: 40px 10px -30px 10px;
+    margin: 40px 10px -20px 10px;
 }
 
 button {
