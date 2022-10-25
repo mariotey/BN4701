@@ -8,32 +8,30 @@
     top: 50%;
     text-align: center;
    
-    background-image: url(/static/img/background.png);
+    background-image: url(/static/img/background_dull.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #cccccc; /* Used if the image is unavailable */    
+    background-color: #cccccc; /* Used if the image is unavailable */ 
 }
 
 .title {
     position: relative;
-    top: 30%;
+    padding: 10px 10px;
 }
 
-.button {
-    position: relative;
-    top: 55%;
+.instruct {
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 10px;
 }
 
 h1 {
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    font-size: 110px;
-    color: black;
-}
-
-button {
-    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     color: black;
     padding: 10px 10px;
 }
+
 
