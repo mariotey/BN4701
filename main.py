@@ -7,9 +7,9 @@ app = Flask(__name__)
 def main_page():
     return render_template("main.html")
 
-@app.route("/Start")
+@app.route("/Game")
 def start_page():
-    return render_template("start.html")
+    return render_template("game.html")
 
 @app.route("/Instructions")
 def instruction_page():

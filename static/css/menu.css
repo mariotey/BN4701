@@ -1,12 +1,17 @@
 .container {
     position: relative;
-    /* border: 3px solid green;  */
+    display: flex;
+    align-items: center;
+    top: 100px;
+    justify-content: center;
 }
 
 .background {
     height: 800px;
     top: 50%;
     text-align: center;
+    width: 1400px;
+    height: 805px;
    
     background-image: url(/static/img/background.png);
     background-position: center;
@@ -16,17 +21,18 @@
 
 .title {
     position: relative;
-    top: 30%;
 }
 
 .button {
     position: relative;
     top: 55%;
+    width: 500px;
+    display: inline;
 }
 
 h1 {
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    font-size: 110px;
+    font-size: 80px;
     color: black;
 }
 

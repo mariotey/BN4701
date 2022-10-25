@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    /* border: 3px solid green;  */
+}
+
+.background {
+    height: 800px;
+    top: 50%;
+    text-align: center;
+   
+    background-image: url(/static/img/background_dull.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #cccccc; /* Used if the image is unavailable */ 
+}
+
+.map {
+    position: relative;
+    display: inline-block;
+    border: 5px solid black;
+    left: 243px;
+    top: 18px;
+    width: 900px;
+    height: 750px;    
+}
+
+.profile {
+    border: 5px solid black;
+    position: relative;
+    display: inline-block;
+    top: 18px;
+    width: 188px;
+    height: 232px;
+    left: 265px;
+}
+
+.medal {
+    border: 5px solid black;
+    position: relative;
+    display: inline-block;
+    top: 18px;
+    width: 140px;
+    height: 100px;
+    left: 285px;
+}
+
+.shop {
+    border: 5px solid black;
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 100px;
+    top: 150px;
+    left: 132px;
+}
+
+.location {
+    border: 5px solid black;
+    position: relative;
+    display: inline-block;
+    top: 18px;
+    width: 364px;
+    height: 487px;
+    left: -245px;
+    top: 280px;
+}
+
