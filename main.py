@@ -27,19 +27,19 @@ def instruction_page():
 
 @app.route("/VoidDeck")
 def voiddeck_page():
-    return "VoidDeck"
+    return render_template("map.html")
 
 @app.route("/WetMarket")
 def wetmarket_page():
-    return "WetMarket"
+    return render_template("map.html")
 
 @app.route("/Park")
 def park_page():
-    return "Park"
+    return render_template("map.html")
 
 @app.route("/HawkerCentre")
 def hawkercentre_page():
-    return "HawkerCentre"
+    return render_template("map.html")
 
 #################################################################################################
 if __name__ == "__main__":

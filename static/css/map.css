@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 100px;
+    justify-content: center;
+}
+
+.background {
+    height: 800px;
+    top: 50%;
+    text-align: center;
+    width: 1400px;
+    height: 805px;
+   
+    background-image: url(/static/img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #cccccc; /* Used if the image is unavailable */    
+}
+
+.char {
+    position: relative;
+    text-align: center;
+
+    width: 80px;
+    height: 80px;
+    
+    background-image: url(/static/img/elderly.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;  
+    
+    transition: all .5s ease-in-out;
+}

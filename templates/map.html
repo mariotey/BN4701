@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1,shrink-to-fit=no">
+
+         <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/static/css/map.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "background" onclick = "movechar(event)">
+                <div id = "main_char" class = "char"></div>
+            </div>
+        </div>
+    </body>
+    <script>       
+        $(document).ready(function(){
+            document.getElementById("main_char").style.left = Math.random() * 1300 +  "px";
+            document.getElementById("main_char").style.top = Math.random() * 700 + "px";
+        });
+        
+        function movechar(event){
+            var x_pos = event.clientX;
+            var y_pos = event.clientY;
+
+            window.console.log("x: " + String(x_pos) + ", y: " +  String(y_pos));
+
+            document.getElementById("main_char").style.left = (x_pos - 300) +  "px";
+            document.getElementById("main_char").style.top = (y_pos - 150) + "px";
+        }
+    </script>
+</html>
