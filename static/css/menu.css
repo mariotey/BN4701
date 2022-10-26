@@ -25,7 +25,6 @@
 
 .button {
     position: relative;
-    top: 55%;
     width: 500px;
     display: inline;
 }
@@ -34,6 +33,7 @@ h1 {
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
     font-size: 80px;
     color: black;
+    margin: 215px 10px;
 }
 
 button {

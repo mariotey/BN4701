@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1,shrink-to-fit=no">
+
+        <link rel="stylesheet" href="/static/css/mmse.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "background">
+                <div class= "title">
+                    <h1> Choose your region! </h1>
+                </div>
+                <form action ="/Game" method="POST">
+                    <div class = "question_space">
+                        <div id="north" onclick = "button_change(event)" class = "location_choice"> North </div>
+                        <div id="south" onclick = "button_change(event)" class = "location_choice"> South </div>
+                        <div id="central" onclick = "button_change(event)" class = "location_choice"> Central </div>
+                        <div id="east" onclick = "button_change(event)" class = "location_choice"> East </div>
+                        <div id="west" onclick = "button_change(event)" class = "location_choice"> West </div>
+                    </div>
+                    <div class="location_submit">  
+                        <input type="submit" value="Finally Done!">
+                    </div>               
+                </form>
+            </div>      
+        </div>
+    </body>
+    <script>
+        function button_change(event){
+            document.getElementById("north").style.color = "black";
+            document.getElementById("south").style.color = "black";
+            document.getElementById("central").style.color = "black";
+            document.getElementById("east").style.color = "black";
+            document.getElementById("west").style.color = "black";
+
+            document.getElementById(event.target.id).style.color = "red";
+        }
+    </script>
+</html>
