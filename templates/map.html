@@ -11,15 +11,35 @@
     </head>
     <body>
         <div class = "container">
-            <div class = "background" onclick = "movechar(event)">
+            <div id = "bg" class = "background" onclick = "movechar(event)">
                 <div id = "main_char" class = "char"></div>
+                <div id = "npc_one" class = "npc" style = "background-image: url(/static/img/NPC_one.png);"></div>
+                <div id = "npc_two" class = "npc" style = "background-image: url(/static/img/NPC_two.png);"></div>
+                <div id = "npc_three" class = "npc" style = "background-image: url(/static/img/NPC_three.png);"></div>
+                <div id = "npc_four" class = "npc" style = "background-image: url(/static/img/NPC_four.png);"></div>
+                <div id = "npc_five" class = "npc" style = "background-image: url(/static/img/NPC_five.png);"></div>
+                <div id = "station" class = "mrt" style = "background-image: url(/static/img/station.png);"></div>
             </div>
         </div>
     </body>
     <script>       
-        $(document).ready(function(){
-            document.getElementById("main_char").style.left = Math.random() * 1300 +  "px";
-            document.getElementById("main_char").style.top = Math.random() * 700 + "px";
+        $(document).ready(function(){           
+            document.getElementById("main_char").style.left = Math.random() * 1200 +  "px";
+            document.getElementById("main_char").style.top = Math.random() * 700  + "px";
+
+            document.getElementById("npc_one").style.left = Math.random() * 1100 +  "px";
+            document.getElementById("npc_one").style.top = Math.random() * 700 + "px";
+            document.getElementById("npc_two").style.left = Math.random() * 1000 +  "px";
+            document.getElementById("npc_two").style.top = Math.random() * 700 + "px";
+            document.getElementById("npc_three").style.left = Math.random() * 900 +  "px";
+            document.getElementById("npc_three").style.top = Math.random() * 700 + "px";
+            document.getElementById("npc_four").style.left = Math.random() * 800 +  "px";
+            document.getElementById("npc_four").style.top = Math.random() * 700 + "px";
+            document.getElementById("npc_five").style.left = Math.random() * 700 +  "px";
+            document.getElementById("npc_five").style.top = Math.random() * 700 + "px";
+
+            document.getElementById("station").style.left = Math.random() * 600 +  "px";
+            document.getElementById("station").style.top = Math.random() * 600 + "px";
         });
         
         function movechar(event){
@@ -28,8 +48,8 @@
 
             window.console.log("x: " + String(x_pos) + ", y: " +  String(y_pos));
 
-            document.getElementById("main_char").style.left = (x_pos - 300) +  "px";
-            document.getElementById("main_char").style.top = (y_pos - 150) + "px";
+            document.getElementById("main_char").style.left = (x_pos - 250) +  "px";
+            document.getElementById("main_char").style.top = (y_pos - 100) + "px";
         }
     </script>
 </html>

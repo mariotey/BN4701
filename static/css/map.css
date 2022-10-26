@@ -7,11 +7,12 @@
 }
 
 .background {
-    height: 800px;
+    display: flex;
+    text-align: center; 
+
     top: 50%;
-    text-align: center;
     width: 1400px;
-    height: 805px;
+    height: 800px;
    
     background-image: url(/static/img/background.png);
     background-position: center;
@@ -31,5 +32,30 @@
     background-repeat: no-repeat;
     background-size: 80px 80px;  
     
-    transition: all .5s ease-in-out;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.npc {
+    position: relative;
+    text-align: center;
+
+    width: 80px;
+    height: 80px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;  
+}
+
+.mrt {
+    position: relative;
+    text-align: center;
+
+    width: 80px;
+    height: 80px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;  
 }
