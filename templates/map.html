@@ -42,14 +42,45 @@
             document.getElementById("station").style.top = Math.random() * 600 + "px";
         });
         
+        function char_proxy(elem, stat_gap){
+            var main_char = document.getElementById("main_char").getBoundingClientRect();
+            var proxy = elem.getBoundingClientRect();
+            
+            // console.log("char: " + main_char.top + ", " + main_char.left + ", comp: " + proxy.top + ", " + proxy.left);
+
+            if (Math.abs(main_char.top - proxy.top) <= stat_gap && Math.abs( main_char.left - proxy.left) <= stat_gap) {
+                if (elem == document.getElementById("station")) {
+                    console.log("byebye");
+
+                    const linkElem = document.createElement("a");
+                    linkElem.href = "Game";
+                    linkElem.click();
+                }
+                else {
+                    alert(elem.id + " wants to Talk!");
+                }
+            };
+        }
+
         function movechar(event){
             var x_pos = event.clientX;
             var y_pos = event.clientY;
 
             window.console.log("x: " + String(x_pos) + ", y: " +  String(y_pos));
 
-            document.getElementById("main_char").style.left = (x_pos - 250) +  "px";
-            document.getElementById("main_char").style.top = (y_pos - 100) + "px";
+            document.getElementById("main_char").style.left = (x_pos - 350) +  "px";
+            document.getElementById("main_char").style.top = (y_pos - 150) + "px";
+
+            
+            char_proxy(document.getElementById("npc_one"), 200);
+            char_proxy(document.getElementById("npc_two"), 200);
+            char_proxy(document.getElementById("npc_three"), 200);
+            char_proxy(document.getElementById("npc_four"), 200);
+            char_proxy(document.getElementById("npc_five"), 200);
+            char_proxy(document.getElementById("station"), 20);
         }
+
+       
+
     </script>
 </html>
