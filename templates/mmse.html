@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1,shrink-to-fit=no">
+
+        <link rel="stylesheet" href="/static/css/mmse.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "background">
+                <div class= "title">
+                    <h1> Tell me about Today! </h1>
+                </div>
+                <form action ="/Game" method="POST">
+                    <div><input type="text" name="name" placeholder="What is your name?" required> </div>
+                    <div class = "question_space">
+                        <div class = "question"><input type="text" name="date" placeholder="What is today's date?" required> </div>
+                        <div class = "question"><input type="text" name="day_of_week" placeholder="What is the day of the week?" required> </div>
+                        <div class = "question"><input type="text" name="weather" placeholder="How is the weather?" required> </div>
+                        <div class = "question"><input type="text" name="location" placeholder="Where are you?" required> </div>
+                    </div>
+                    <div>  
+                        <input type="submit" value="Submit">
+                    </div>               
+                </form>
+            </div>      
+        </div>
+    </body>
+    <script>
+    </script>
+</html>

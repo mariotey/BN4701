@@ -1,5 +1,13 @@
-from datetime import datetime 
 from flask import Flask, Response, render_template, request
+
+user_stuff = {
+    "name": "",
+    "date": "",
+    "day_of_week": "",
+    "weather": "",
+    "location": ""
+}
+
 
 app = Flask(__name__)
 
@@ -11,8 +19,26 @@ def main_page():
 
 #################################################################################################
 
-@app.route("/Game")
+@app.route("/MMSE")
+def mmse():
+   return render_template("mmse.html")
+
+#################################################################################################
+
+@app.route("/Game", methods=["GET", "POST"])
 def start_page():
+    user_stuff["name"] = request.form.get("name")
+    user_stuff["date"] = request.form.get("date")
+    user_stuff["day_of_week"] = request.form.get("day_of_week")
+    user_stuff["weather"] = request.form.get("weather")
+    user_stuff["location"] = request.form.get("location")
+
+    menu_response = Response(render_template("game.html"))
+  
+    return menu_response
+
+@app.route("/GameNew")
+def restart_page():
     return render_template("game.html")
 
 @app.route("/Instructions")
