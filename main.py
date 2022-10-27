@@ -30,6 +30,7 @@ def start_page():
     user_stuff["date"] = request.form.get("date")
     user_stuff["day_of_week"] = request.form.get("day_of_week")
     user_stuff["weather"] = request.form.get("weather")
+    user_stuff["location"] = request.form.get("location")
     user_stuff["region"] = request.form.get("region")
     
     return render_template("game.html")
