@@ -13,11 +13,11 @@
     top: 50%;
     width: 1400px;
     height: 800px;
-   
-    background-image: url(/static/img/background.png);
+
     background-position: center;
     background-repeat: no-repeat;
     background-color: #cccccc; /* Used if the image is unavailable */    
+    background-size: 1400px 800px;
 }
 
 .char {

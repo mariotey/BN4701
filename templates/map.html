@@ -24,6 +24,8 @@
     </body>
     <script>       
         $(document).ready(function(){           
+            document.getElementById("bg").style.backgroundImage = "url(/static/img/" + {{img| tojson}} + ".png)";
+            
             document.getElementById("main_char").style.left = Math.random() * 1200 +  "px";
             document.getElementById("main_char").style.top = Math.random() * 700  + "px";
 
@@ -69,7 +71,7 @@
 
             window.console.log("x: " + String(x_pos) + ", y: " +  String(y_pos));
            
-            document.getElementById("main_char").style.left = (x_pos - 350) +  "px";
+            document.getElementById("main_char").style.left = (x_pos - 450) +  "px";
             document.getElementById("main_char").style.top = (y_pos - 150) + "px";
 
             char_proxy(document.getElementById("npc_one"), 200);
