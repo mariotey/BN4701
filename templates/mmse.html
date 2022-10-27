@@ -12,7 +12,7 @@
                 <div class= "title">
                     <h1> Tell me about Today! </h1>
                 </div>
-                <form action ="/MMSE_location" method="POST">
+                <form action ="/Game" method="POST">
                     <div><input type="text" name="name" placeholder="What is your name?" required> </div>
                     <div class = "question_space">
                         <div class = "question"><input type="text" name="date" placeholder="What is today's date?" required> </div>
@@ -20,13 +20,37 @@
                         <div class = "question"><input type="text" name="weather" placeholder="How is the weather?" required> </div>
                         <div class = "question"><input type="text" name="location" placeholder="Where are you?" required> </div>
                     </div>
+                    <div class= "title">
+                        <h1> Choose your region! </h1>
+                    </div>
+                    <select name="region" id = "region" onchange = "checkRegion()">
+                        <option id="blank" value = "blank">  </option>
+                        <option id="north" value = "north"> North </option>
+                        <option id="south" value = "south"> South </option>
+                        <option id="central" value = "central"> Central </option>
+                        <option id="east" value = "east"> East </option>
+                        <option id="west" value = "west"> West </option>
+                    </select>
                     <div>  
-                        <input type="submit" value="Submit">
+                        <input type="submit" id = "submit" value="Submit" disabled>
                     </div>               
                 </form>
             </div>      
         </div>
     </body>
     <script>
+        function checkRegion(){
+            if (document.getElementById("region").value == "blank"){
+                // alert("Please choose your region!");
+                document.getElementById("submit").disabled = true;
+                document.getElementById("submit").style.backgroundColor = "#bcbcbc";
+                document.getElementById("submit").style.color = "black";
+            }
+            else{
+                document.getElementById("submit").disabled = false;
+                document.getElementById("submit").style.backgroundColor = "red";
+                document.getElementById("submit").style.color = "white";
+            }
+        }
     </script>
 </html>

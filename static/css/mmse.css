@@ -24,7 +24,7 @@
     position: relative;
 
     width: 1000px;
-    height: 385px;
+    height: 200px;
 
     /* border: 5px solid black; */
 }
@@ -32,12 +32,17 @@
 .question {
     display: inline-block;
     position: relative;
-
     width: 360px;
-    height: 90px;
-
+    height: 23px;
     margin: 30px 60px;
-    /* border: 5px solid black; */
+    /* border: 5px solid black;*/
+}
+
+.region_space {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 40px 10px;
+    /* border: 5px solid black;*/
 }
 
 .location_choice{
@@ -58,9 +63,9 @@
 
 h1 {
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: black;
-    margin: 50px 10px 10px 10px;
+    margin: 35px 10px 10px 10px;
 }
 
 button {
@@ -75,10 +80,35 @@ input[type=text] {
     text-align: center;
     padding: 12px 12px;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-    font-size: inherit;
-    width: 300px;
+    font-size: 25px;
+    width: 400px;
     border-radius: 50px 50px 50px 50px;
     overflow: hidden;
-    margin: 20px 10px
+    margin: 20px 10px;
+}
+
+input[type=submit] {
+    background-color: #bcbcbc;
+    border-radius: 100px;
+    color: black;
+    cursor: pointer;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 13px 43px;
+    text-align: center;
+    margin: 10px 10px;
+    transition: all 250ms;
+    font-size: 40px;
+    touch-action: manipulation;
+}
+
+select {
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    font-size: 19px;
+    color: black;
+    margin: 10px 10px 40px 10px;
+    border-radius: 100px;
+    padding: 10px 10px;
+    text-align: center;
+    touch-action: manipulation;
 }
 

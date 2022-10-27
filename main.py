@@ -22,24 +22,15 @@ def main_page():
 @app.route("/MMSE")
 def mmse():
     return render_template("mmse.html")
-
-@app.route("/MMSE_location", methods=["GET", "POST"])
-def mmse_location():
-    user_stuff["name"] = request.form.get("name")
-    user_stuff["date"] = request.form.get("date")
-    user_stuff["day_of_week"] = request.form.get("day_of_week")
-    user_stuff["weather"] = request.form.get("weather")
-    user_stuff["location"] = request.form.get("location")
-    
-    return render_template("mmse_location.html")
-
 #################################################################################################
 
 @app.route("/Game", methods=["GET", "POST"])
 def start_page():
-    user_input = request.form
-    
-    # user_stuff["region"] = request.form.get("location")
+    user_stuff["name"] = request.form.get("name")
+    user_stuff["date"] = request.form.get("date")
+    user_stuff["day_of_week"] = request.form.get("day_of_week")
+    user_stuff["weather"] = request.form.get("weather")
+    user_stuff["region"] = request.form.get("region")
     
     return render_template("game.html")
 

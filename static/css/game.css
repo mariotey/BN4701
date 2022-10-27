@@ -131,10 +131,16 @@ h1 {
 }
 
 button {
-    padding: 10px 10px;
+    background-color: #bcbcbc;
+    border-radius: 100px;
     color: black;
-
-    font-size: 30px;
+    cursor: pointer;
     font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 13px 43px;
+    text-align: center;
+    margin: 10px 10px;
+    transition: all 250ms;
+    font-size: 25px;
+    touch-action: manipulation;
 }
 

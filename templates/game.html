@@ -35,7 +35,9 @@
     <script>
         function get_location(attr) {
             document.getElementById("location_button").disabled = false;
-            
+            document.getElementById("location_button").style.backgroundColor = "red";
+            document.getElementById("location_button").style.color = "white";
+
             if (attr == "voiddeck") {
                 document.getElementById("location_name").innerHTML = "Void Deck";
                 document.getElementById("location_image").style.backgroundImage = "url('static/img/voiddeck.png')";
