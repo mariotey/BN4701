@@ -12,7 +12,7 @@ Hence, this project aims to design a serious game that allow persons newly-diagn
 - Reduce rate of cognitive decline: Mentally stimulates players to make decisions when faced with different scenarios
 - Tracking of progress: Data on each user’s choices in will be recorded to enable follow-up by healthcare team
 
-#Getting Started##
+## Getting Started ##
 ### Dependencies ###
 - Flask
 
