@@ -1,5 +1,6 @@
-#BN4701 Project Game: Where Shall We Go Today
+# BN4701 Project Game: Where Shall We Go Today #
 
+## Description ##
 Alzheimer is the most common form of dementia worldwide and people suffering from it tend to experience symptoms associated with overall declining cognitive abilities. Moreover, they also experience mood and personality changes, impaired social judgement and emotional regulation which impedes their socialization with others.
 
 In Singapore, a community-based care approach is usually adopted by dementia day cares and nursing homes as the bulk of their care services to serve PLWDs. The daycare centres generally conduct mentally stimulating activities such as bingo or colouring to keep their patients engaged. However, as the content of these activities tend to be repetitive, it eventually becomes boring and unengaging after prolonged periods. It is also no longer sufficient to fulfil the need for mental engagement. In addition, these games only target the memory declining aspect of dementia, leaving out other aspects such as decision making and communication skills that could decline due to dementia.
@@ -11,3 +12,15 @@ Hence, this project aims to design a serious game that allow persons newly-diagn
 - Reduce rate of cognitive decline: Mentally stimulates players to make decisions when faced with different scenarios
 - Tracking of progress: Data on each user’s choices in will be recorded to enable follow-up by healthcare team
 
+#Getting Started##
+### Dependencies ###
+- Flask
+
+### Installing ###
+- Clone Project from git repository
+
+### Executing Program ###
+- After all files have been cloned from git repository, simply run "main.py"
+
+## Author ##
+Tey Ming Chuan
