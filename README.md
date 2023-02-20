@@ -20,7 +20,7 @@ Hence, this project aims to design a serious game that allow persons newly-diagn
 - Clone Project from git repository
 
 ### Executing Program ###
-- After all files have been cloned from git repository, simply run "main.py"
+- After all files have been cloned, simply run "main.py"
 
 ## Author ##
 Tey Ming Chuan
