@@ -1,4 +1,4 @@
-# BN4701 Project Game: Where Shall We Go Today #
+# Project Game: Where Shall We Go Today #
 
 ## Description ##
 Alzheimer is the most common form of dementia worldwide and people suffering from it tend to experience symptoms associated with overall declining cognitive abilities. Moreover, they also experience mood and personality changes, impaired social judgement and emotional regulation which impedes their socialization with others.
